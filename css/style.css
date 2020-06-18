@@ -1,0 +1,976 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover,a:focus{
+    text-decoration: none !important;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+/* html,body{
+    scroll-behavior: smooth;
+} */
+/* ================================================
+navbar css start
+=================================================== */
+
+nav{
+    background: rgba(53, 53, 53, .25);
+    padding: 0 !important;
+    position: absolute !important;
+    width: 100%;
+    z-index: 9999;
+    top: 26px;
+    
+}
+.navbar-brand{
+    padding: 0 !important;
+    background: #353535;
+    width: 200px;
+    height: 71px;
+    text-align: center;
+    line-height: 66px !important;
+    position: absolute;
+    transform: skewX(-40deg);
+    border-left: 3px solid #000;
+    border-right: 3px solid #000000;
+}
+.navbar-brand img{
+    transform: skewX(40deg);
+}
+nav ul li a{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 5px;
+    background:transparent;
+    padding: 14px 10px !important;
+    position: relative;
+    transition: .4s;
+}
+nav ul li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #e23e38;
+    content: "";
+    transition: .4s;
+}
+nav ul li a:hover{
+    background: #ffffff;
+    color: #000000;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.fixed{
+    position: fixed !important;
+    background: rgba(53, 53, 53, 0.65);
+    padding: 1 !important;
+    top: 0;
+}
+.fixed .navbar-brand{
+    border: 0;
+    height: 50px;
+    line-height: 6px !important;
+    padding: 0 !important;
+}
+.navbar-toggler-icon{
+    color: #ffffff;
+    outline: 0em;
+}
+.navbar-toggler{
+    outline: 0 !important; 
+}
+.nav-link{
+    text-align: center;
+}
+
+/* ================================================
+navbar css end
+=================================================== */
+/* ================================================
+banner css start
+=================================================== */
+#banner-part .banner{
+    background: url(../images/banner-bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed !important;
+}
+#banner-part .banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 253px;
+    padding-bottom: 120px;
+}
+#banner-part .banner .overlay h2{
+    font-family: 'oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+#banner-part .banner .overlay h2::after {
+	position: absolute;
+	top: 19px;
+	left: 273px;
+	width: 166px;
+	height: 3px;
+	background: #e23e38;
+	content: "";
+	border-bottom-right-radius: 3px;
+}
+#banner-part .banner .overlay h2::before {
+	position: absolute;
+	top: 19px;
+	right: 273px;
+	width: 166px;
+	height: 3px;
+	background: #e23e38;
+	content: "";
+	border-bottom-left-radius: 3px;
+}
+#banner-part .banner .overlay h1{
+    font-family: 'oswald', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e23e38;
+    margin: 20px 0;
+    position: relative;
+}
+#banner-part .banner .overlay h1::after {
+	position: absolute;
+	top: -34px;
+	right: 273px;
+	width: 3px;
+	height: 223px;
+	background: #e23e38;
+	content: "";
+}
+#banner-part .banner .overlay h1::before {
+	position: absolute;
+	top: -34px;
+	left: 273px;
+	width: 3px;
+	height: 223px;
+	background: #e23e38;
+	content: "";
+}
+#banner-part .banner .overlay p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 13px;
+    font-weight:400 ;
+    width: 508px;
+    margin: 0 auto;
+    position: relative;
+}
+#banner-part .banner .overlay a{
+    font-family: 'oswald', sans-serif;
+    font-size: 16px;
+    font-weight:500 ;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    transition: .4s;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+}
+#banner-part .banner .overlay p::after {
+	position: absolute;
+	top: 94px;
+	left: -25px;
+	width: 75px;
+	height: 3px;
+	background: #e23e38;
+	content: "";
+}
+#banner-part .banner .overlay p::before {
+	position: absolute;
+	top: 94px;
+	right: -25px;
+	width: 75px;
+	height: 3px;
+	background: #e23e38;
+	content: "";
+}
+#banner-part .banner .overlay a:hover{
+    background: #e23e38;
+    border-color: #e23e38;
+}
+.bg-fact1{
+    background: url(../images/banner-bg2.jpg) no-repeat center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+.bg-fact2{
+    background: url(../images/workout-motivation-quotes-wallpaper-hd.jpg) no-repeat center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+#banner-part ul{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#banner-part ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+#banner-part ul li button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background: transparent;
+    font-size: 0;
+    cursor: pointer;
+}
+#banner-part ul li.slick-active button{
+    background: #e23e38;
+    border-color: #e23e38;
+}
+.animate__animated.animate__backInUp{
+    --animate-duration: 2s;
+}
+.animate__animated.animate__backInDown{
+    --animate-duration: 2s;
+}
+.animate__animated.animate__fadeInLeft{
+    --animate-duration: 2s; 
+}
+.animate__animated.animate__fadeInRight{
+    --animate-duration: 2s; 
+}
+.animate__animated.animate__fadeIn{
+    --animate-duration: 2s; 
+}
+/* ================================================
+banner css end
+=================================================== */
+/* ================================================
+about css start
+=================================================== */
+#about-part{
+    margin-top: 107px;
+}
+#about-part .img{
+    position: relative;
+}
+#about-part .img .overlay{
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    position: relative;
+}
+#about-part .img .overlay i{
+    font-size: 56px;
+    color: #e23e38;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+#about-part .img img{
+    width: 100%;
+}
+#about-part .text{
+    text-align: center;
+}
+#about-part .text h2{
+    font-family: 'oswald', sans-serif;
+    font-size: 22px;
+    font-weight:400 ;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: -6px;
+}
+#about-part .text p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #222222;
+    
+}
+#about-part .text .up{
+    width: 505px;
+    margin: 0 auto;
+    margin: 30px 0;
+}
+#about-part .text .down{
+    width: 507px;
+    margin: 0 auto;
+}
+/* ================================================
+about css end
+=================================================== */
+/* ================================================
+gallary css start
+=================================================== */
+
+.title{
+    text-align: center;
+    margin-top: 80px;
+}
+.title h2{
+    font-family: 'oswald', sans-serif;
+    font-size: 22px;
+    font-weight:400 ;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: -6px;
+}
+#gallery-part{
+    background: url(../images/gallary-bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+#gallery-part .up-fram{
+    width: 100%;
+    height: inherit;
+    background: red;
+    margin: 30px 0;
+}
+#gallery-part .down-fram{
+    width: 100%;
+    height: inherit;
+    background: greenyellow;
+    margin: 30px 0;
+}
+#gallery-part .common-1{
+    position: relative;
+}
+#gallery-part .common-1 img{
+    width: 100%;
+    height: 100%;
+}
+#gallery-part .common-1 .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 5px solid rgba(255, 255, 255, .5);
+    background: rgba(226, 62, 56, .5);
+    transform: scale(0) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+#gallery-part .common-1 .overlay i{
+    font-size: 30px;
+    color: #ffffff;
+    transform: scale(0);
+    cursor: pointer;
+    transition: .4s;
+}
+#gallery-part .common-1:hover .overlay{
+    transform: scale(.95);
+}
+#gallery-part .common-1:hover .overlay i{
+    transform: scale(1);
+}
+
+/* ================================================
+gallary css end
+=================================================== */
+/* ================================================
+team css start
+=================================================== */
+#team-part{
+    margin-top: 70px;
+}
+#team-part .img{
+    width: 100%;
+    height: inherit;
+    position: relative;
+}
+#team-part .img .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 5px solid rgba(255, 255, 255, .5);
+    background: rgba(226, 62, 56, .5);
+    transform: scale(0) ;
+    transition: .4s;
+}
+#team-part .img .overlay .icon{
+    width: 30px;
+    margin-left: auto;
+    margin-top: 51px;
+    margin-right: 12px;
+}
+#team-part .img .overlay .icon i{
+    width: 30px;
+    height: 30px;
+    color: #fffefe;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #fffefe;
+    margin-bottom: 12px;
+    transition: .4s;
+}
+#team-part .img .overlay .icon i:hover{
+    background: #fffefe;
+    color: #1da0f2;
+}
+#team-part .img img{
+    width: 100%;
+    height: 100%;
+}
+#team-part .text{
+    text-align: center;
+    border: 1px solid transparent;
+    border-top: 0;
+    transition: .4s;
+}
+#team-part .text h2{
+    font-family: 'oswald', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #222222;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+#team-part .text h3{
+    font-family: 'oswald', sans-serif;
+    font-size: 13px;
+    font-weight:400 ;
+    color: #444444;
+    text-transform: capitalize;
+}
+#team-part .text p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 13px;
+    font-weight:400 ;
+    color: #444444;
+    width: 238px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    line-height: inherit;
+    opacity: 0;
+    transition: .4s;
+}
+#team-part .team-member{
+    transition: .4s;
+}
+#team-part .team-member:hover .text p {
+    line-height: inherit;
+    opacity: 1;
+}
+#team-part .team-member:hover .text  {
+    border-color: #dddddd;
+}
+#team-part .team-member:hover  {
+    margin-top: -40px;
+}
+#team-part .team-member:hover .overlay {
+    transform: scale(.95);
+}
+#team-part .team-member:hover .overlay i {
+    transform: scale(1);
+}
+
+
+/* ================================================
+team css end
+=================================================== */
+/* ================================================
+testimonial css start
+=================================================== */
+
+#testimonial-part{
+    background: url(../images/testimonial-bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#testimonial-part .pic-and-name{
+    display: flex;
+}
+#testimonial-part .pic-and-name .img{
+    width: 80px;
+    height: 80px;
+}
+
+#testimonial-part .pic-and-name .img img{
+    width: 100%;
+    height: 100%;
+}
+#testimonial-part .pic-and-name .name{
+    margin-left: 12px;
+}
+#testimonial-part .pic-and-name .name h3{
+    font-family: 'oswald', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #fffefe;
+    text-transform: uppercase;
+}
+#testimonial-part .pic-and-name .name h4{
+    font-family: 'oswald', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #fffefe;
+    text-transform: capitalize;
+    margin-top: -5px !important;
+    margin-bottom: 3px !important;
+}
+#testimonial-part .pic-and-name .name i{
+    color: #e23e38;
+    font-size: 14px;
+}
+#testimonial-part .description p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #fffefe;
+    width: 595px;
+    margin-top: 12px;
+}
+.testimonial-slider ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.testimonial-slider ul li{
+    display: inline-block;
+    margin:0 5px;
+}
+.testimonial-slider ul li.slick-active button{
+    width: 19px;
+    height: 19px;
+    background: #e23e38;
+    border-color: #e23e38;
+    outline: hidden !important;
+}
+.testimonial-slider ul li button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 0;
+    background: transparent;
+    border: 1px solid #fffefe;
+    
+}
+
+/* ================================================
+testimonial css end
+=================================================== */
+/* ================================================
+priching css start
+=================================================== */
+
+#priching-part .ex2 .header-top{
+    width: 100%;
+    background:#dddddd ;
+    height: 55px;
+    margin-top: 30px;
+    transition: .4s;
+  
+}
+#priching-part .ex2 .header-top h2{
+    font-family: 'oswald', sans-serif;
+    font-size: 16px;
+    font-weight:700 ;
+    color: #222222;
+    line-height: 55px !important;
+    text-transform: uppercase;
+    transition: .4s;
+}
+#priching-part .ex2 .price{
+    width: 100%;
+    background: url(../images/priching-pic1.png) no-repeat center;
+    background-size: cover;
+    height: 120px;
+    line-height: 120px;
+}
+#priching-part .ex2 .price p{
+    font-family: 'oswald', sans-serif;
+    font-size: 50px;
+    font-weight:600 ;
+    color: #ffffff;
+    line-height: 120px !important;
+    text-transform: capitalize;
+}
+#priching-part .ex2 .price p span.ex1{
+    font-size: 29px;
+}
+#priching-part .ex2 .peramid{
+    width: 100%;
+    background:#f1f1f1 ;
+    padding: 40px 0;
+}
+#priching-part .ex2 .peramid p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #444444;
+}
+#priching-part .ex2 .link{
+    width: 100%;
+    background: #dddddd ;
+    height: 33px;
+    margin-top: -16px;
+    transition: .4s;
+}
+#priching-part .ex2 .link a{
+    display: inline-block;
+    font-family: 'oswald', sans-serif;
+    font-size: 16px;
+    font-weight:400 ;
+    color: #222222;
+    line-height: 33px !important;
+    text-transform: uppercase;
+    transition: .4s;
+}
+#priching-part .ex2:hover .header-top{
+    background: #e23e38;
+}
+#priching-part .ex2:hover .link{
+    background: #e23e38;
+}
+#priching-part .ex2:hover .header-top h2{
+    color: #ffffff;
+}
+#priching-part .ex2:hover .link a{
+    color: #ffffff;
+}
+.ex3{
+    background: url(../images/priching-pic2.png) no-repeat center !important;
+    background-size: cover !important;
+}
+.ex4{
+    background: url(../images/priching-pic3.png) no-repeat center !important;
+    background-size: cover !important;
+}
+
+/* ================================================
+priching css end
+=================================================== */
+/* ================================================
+counter css start
+=================================================== */
+
+#counter-up{
+    background: url(../images/counter-bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 43px 0;
+    margin-top: 80px;
+}
+#counter-up .counter h1{
+    font-family: 'oswald', sans-serif;
+    font-size: 40px;
+    font-weight:700 ;
+    color: #ffffff;
+}
+#counter-up .counter p{
+    font-family: 'oswald', sans-serif;
+    font-size: 16px;
+    font-weight:400 ;
+    color: #ffffff;
+}
+.ex5 h1,
+ .ex5 p{
+    padding-right: 65px;
+}
+.ex6 h1,
+ .ex6 p{
+    padding-left: 65px;
+}
+
+/* ================================================
+counter css end
+=================================================== */
+/* ================================================
+class css start
+=================================================== */
+.colorful-tab-wrapper{
+    width: 100% !important;
+    background: transparent !important;
+}
+.colorful-tab-wrapper ul li.active{
+    background: #e23e38;
+    color: #ffffff !important;
+}
+.colorful-tab-wrapper ul li.active a{
+    
+    color: #ffffff !important;
+}
+.colorful-tab-menu-item a{
+    font-family: 'oswald', sans-serif !important;
+    font-size: 14px !important;
+    font-weight:400 ;
+    color: #444444 !important;
+    text-transform: uppercase;
+}
+.colorful-tab-content{
+    color: #000000 !important;
+}
+.colorful-tab-wrapper::before{
+    color: #000000 !important;
+}
+.colorful-tab-menu{
+    background: #f1f1f1 !important;
+}
+.colorful-tab-content ul li{
+    width: 19.6%;
+    background-color: #f1f1f1;
+    text-align: center;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 35px 0;
+    transition: .4s;
+}
+.colorful-tab-content ul li p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #444444;
+    transition: .4s;
+}
+.colorful-tab-content ul li:hover{
+    background: #e23e38;
+}
+.colorful-tab-content ul li:hover p{
+    color: #ffffff;
+}
+
+/* ================================================
+class css end
+=================================================== */
+/* ================================================
+brand-slider css start
+=================================================== */
+
+#brand-slider img{
+    width: 100%;
+}
+.prev {
+	position: absolute;
+	color: #444444;
+	font-size: 28px;
+	cursor: pointer;
+	top: 50%;
+	left: -37px;
+	transform: translateY(-50%);
+    z-index: 9999;
+    transition: .4s;
+}
+.next {
+	position: absolute;
+	color: #444444;
+	font-size: 28px;
+	cursor: pointer;
+	top: 50%;
+	right: -37px;
+	transform: translateY(-50%);
+    z-index: 9999;
+    transition: .4s;
+}
+.prev:hover,
+.next:hover{
+    color: #e23e38;
+}
+
+/* ================================================
+brand-slider css end
+=================================================== */
+/* ================================================
+footer css start
+=================================================== */
+
+footer {
+    text-align: center;
+    background: url(../images/footer-bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 4px;
+    position: relative;
+    margin-top: 100px;
+}
+footer::after{
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background:#fff;
+    content: "";
+}
+footer::before{
+    position: absolute;
+    bottom: 11%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background:#fff;
+    content: "";
+}
+footer .footer-img{
+    padding: 30px 0;
+}
+footer h3{
+    font-family: 'oswald', sans-serif !important;
+    font-size: 14px !important;
+    font-weight:400 ;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 40px;
+}
+footer .rutin{
+    display: flex;
+    margin-top: 30px;
+}
+footer .rutin p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 13px;
+    font-weight:400 ;
+    color: #ffffff; 
+    text-align: left;
+}
+footer .rutin .time{
+    margin-left: 30px;
+    line-height: 7px;
+}
+footer .rutin .day{
+    line-height: 7px;
+}
+footer .twet-box{
+    display: flex;
+    margin-top: 30px;
+}
+footer .twet-box i{
+    color:#1da1f2;
+    font-size: 20px;
+}
+footer .twet-box p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 13px;
+    font-weight:400 ;
+    color: #ffffff; 
+    text-align: left; 
+    width: 205px;
+}
+footer .twet-box .text{
+    margin-left: 10px;
+}
+.ex7{
+    margin-top: 5px !important;
+}
+footer .photo{
+   
+    width: 100%;
+    margin-top: 30px;
+}
+footer .photo a{
+    display: inline-block;
+    margin-top: 8px;
+}
+footer .photo img{
+    width:94%
+}
+footer .adrs{
+    display: flex;
+}
+footer .adrs .icon2 i{
+    color: #e23e38;
+    font-size: 13px;
+}
+footer .adrs .text2 p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 13px;
+    font-weight:400 ;
+    color: #ffffff; 
+    text-align: left; 
+}
+footer .adrs .text2{
+    margin-left: 10px;
+}
+.ex8{
+    margin-top: 30px;
+}
+footer h5{
+    font-family: 'oswald', sans-serif !important;
+    font-size: 14px !important;
+    font-weight:400 ;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 8px 0;
+}
+footer .link-icon i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    margin-right: 5px;
+    transition: .4s;
+    
+}
+footer .link-icon i:hover{
+    background: #e23e38;
+    border-color:#e23e38 ;
+}
+footer .link-icon{
+    margin-left: -57px;
+}
+footer .last {
+    font-family: 'open-sans', sans-serif;
+    font-size: 13px;
+    font-weight:400 ;
+    color: #ffffff; 
+    margin-top: 82px;
+
+}
+footer span{
+    color: #e23e38;
+}
+.btop{
+    display: none;
+    padding: 20px;
+    color: #444444;
+    background: #e23e38;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 9999;
+    border-radius: 3px;
+}
+/* ================================================
+footer css end
+=================================================== */
+
+
+
