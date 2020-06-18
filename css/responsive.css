@@ -312,8 +312,8 @@
          flex-direction: inherit !important;
      }
      .colorful-tab-menu-item{
-         width: 30%;
-         border-bottom: 1px solid #e23e38;
+         width: 16%;
+         border-bottom: 0;
      }
      .colorful-tab-content ul li{
         width: 48.6%;
